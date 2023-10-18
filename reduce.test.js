@@ -46,20 +46,21 @@ describe("#addKeyAndValue", function() {
   });
 });
 
-// describe("#partition", function() {
-//   function isEven(val) {
-//     return val % 2 === 0;
-//   }
-//   function isLongerThanThreeCharacters(val) {
-//     return val.length > 3;
-//   }
-//   var arr = [1, 2, 3, 4, 5, 6, 7, 8];
-//   var names = ["Elie", "Colt", "Tim", "Matt"];
-//   it("returns an array of arrays with the first subarray as values returning true from the callback", function() {
-//     expect(partition(arr, isEven)).toEqual([[2, 4, 6, 8], [1, 3, 5, 7]]);
-//     expect(partition(names, isLongerThanThreeCharacters)).toEqual([
-//       ["Elie", "Colt", "Matt"],
-//       ["Tim"]
-//     ]);
-//   });
-// });
+
+describe("#partition", function() {
+  function isEven(val) {
+    return val % 2 === 0;
+  }
+  function isLongerThanThreeCharacters(val) {
+    return val.length > 3;
+  }
+  var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+  var names = ["Elie", "Colt", "Tim", "Matt"];
+  it("returns an array of arrays with the first subarray as values returning true from the callback", function() {
+    expect(partition(arr, isEven)).toEqual([[2, 4, 6, 8], [1, 3, 5, 7]]);
+    expect(partition(names, isLongerThanThreeCharacters)).toEqual([
+      ["Elie", "Colt", "Matt"],
+      ["Tim"]
+    ]);
+  });
+});
