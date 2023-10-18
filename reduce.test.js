@@ -28,23 +28,23 @@ describe("#vowelCount", function() {
 });
 
 
-// describe("#addKeyAndValue", function() {
-//   var arr = [
-//     { name: "Elie" },
-//     { name: "Tim" },
-//     { name: "Matt" },
-//     { name: "Colt" }
-//   ];
-//   var updated = [
-//     { title: "Instructor", name: "Elie" },
-//     { title: "Instructor", name: "Tim" },
-//     { title: "Instructor", name: "Matt" },
-//     { title: "Instructor", name: "Colt" }
-//   ];
-//   it("adds a key and value to each object in an array of objects", function() {
-//     expect(addKeyAndValue(arr, "title", "Instructor")).toEqual(updated);
-//   });
-// });
+describe("#addKeyAndValue", function() {
+  var arr = [
+    { name: "Elie" },
+    { name: "Tim" },
+    { name: "Matt" },
+    { name: "Colt" }
+  ];
+  var updated = [
+    { title: "Instructor", name: "Elie" },
+    { title: "Instructor", name: "Tim" },
+    { title: "Instructor", name: "Matt" },
+    { title: "Instructor", name: "Colt" }
+  ];
+  it("adds a key and value to each object in an array of objects", function() {
+    expect(addKeyAndValue(arr, "title", "Instructor")).toEqual(updated);
+  });
+});
 
 // describe("#partition", function() {
 //   function isEven(val) {
